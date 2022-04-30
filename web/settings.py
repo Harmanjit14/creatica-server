@@ -17,6 +17,7 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env()
+
 environ.Env.read_env()
 
 
@@ -27,7 +28,7 @@ environ.Env.read_env()
 SECRET_KEY = str(env('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(env('DEBUG'))
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -75,8 +76,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "corsheaders",
+    "graphene_django",
     'user_messages',
 ]
+
+GRAPHENE = {
+    "SCHEMA": "web.schema.schema"
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
