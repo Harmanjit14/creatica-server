@@ -14,7 +14,7 @@ google-api-core==1.31.5
 google-auth==1.35.0
 google-cloud-core==1.7.2
 googleapis-common-protos==1.56.0
-googletrans==3.0.0
+googletrans==4.0.0rc1
 graphene==2.1.8
 graphene-django==2.15.0
 graphql-core==2.3.2

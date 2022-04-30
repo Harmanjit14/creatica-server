@@ -29,22 +29,3 @@ def sentiment_scores(sentence):
     else :
         print("Neutral")
  
- 
-   
-# Driver code
-if __name__ == "__main__" :
- 
-    print("\n1st statement :")
-    sentence = "Geeks For Geeks is the best portal for \
-                the computer science engineering students."
- 
-    # function calling
-    sentiment_scores(sentence)
- 
-    print("\n2nd Statement :")
-    sentence = "study is going on as usual"
-    sentiment_scores(sentence)
- 
-    print("\n3rd Statement :")
-    sentence = "I feel stress."
-    sentiment_scores(sentence)
