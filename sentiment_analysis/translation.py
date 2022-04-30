@@ -19,6 +19,9 @@ translation('Hello world')
 """
 from googletrans import Translator
 
-translator = Translator()
-translation = translator.translate("Der Himmel ist blau und ich mag Bananen")
-print(translation.text)
+def translate(text):
+    translator = Translator()
+    translation = translator.translate(text)
+    return translation.text
+
+print(translate("hola amigo"))
