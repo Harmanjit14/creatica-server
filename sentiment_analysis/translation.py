@@ -1,14 +1,13 @@
-import six
-import os
+"""
+import environ
 from google.cloud import translate_v2 as translate
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS']=r"D:\HACKATHONS\env\creatica-server-keys.json"
-def translation(text,target):
-    translate_client=translate.Client()
-    # text="Good"
-    # target='hi'
+target = 'en'
 
-    result= translate_client.translate(
+
+def translation(text):
+    translate_client = translate.Client()
+    result = translate_client.translate(
         text,
         target_language=target
     )
@@ -16,7 +15,10 @@ def translation(text,target):
     print(u"Translation: {}".format(result["translatedText"]))
 
 
+translation('Hello world')
+"""
+from googletrans import Translator
 
-text = input("Enter the message:")
-str = input('Language:')
-translation(text,str)
+translator = Translator()
+translation = translator.translate("Der Himmel ist blau und ich mag Bananen")
+print(translation.text)
