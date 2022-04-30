@@ -23,5 +23,3 @@ def translate(text):
     translator = Translator()
     translation = translator.translate(text)
     return translation.text
-
-print(translate("hola amigo"))
