@@ -66,5 +66,5 @@ The algorithm is **very easy to use** and can be **embedded in any chat app usin
 
 ## Collaborators
 - [Harmanjit Singh](https://github.com/harmanjit14)
-- [Manya Thaur](https://github.com/manya1712)
+- [Manya Thakur](https://github.com/manya1712)
 - [Mahira Moody](https://github.com/Mahiramodi)
